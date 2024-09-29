@@ -10,18 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="styles\styles.css" type="text/css">
-    <script src="js"> defer </script>
+    <script src="js\app.js"> defer </script>
 </head>
 <body>
     <section class="hero-banner">
         <header>
             <nav>
                 <ul>
-                    <img src="img\photos\photo_portrait.jpg" alt="ma photo">
-                    <a class="links" href="doc\Thomas GRANDJEAN.pdf" download>CV</a>
-                    <a class="links" href="mailto:thomasgrandjean45@gmail.com?subject=Contact via portfolio">MAIL</a>
-                    <a class="links" href="https://github.com/tomSample?tab=projects">GitHUB</a>
-                    <a class="links" href="https://www.linkedin.com/in/thomas-grandjean/">LINKEDIN</a>
+                    <img id="nav-photo" src="img\photos\photo_portrait.jpg" alt="ma photo">
+                    <div class="nav-links-box">
+                        <a id="nav-link-1" class="links" href="https://www.linkedin.com/in/thomas-grandjean/" target="_blank">Ajoutez-moi sur Linkedin</a>
+                        <a id="nav-link-2" class="links" href="mailto:thomasgrandjean45@gmail.com">Contactez moi par mail</a>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -36,22 +36,22 @@
         </div>
         <div class="hero-links-container">
             <ul>
-                <a href="#projects">PROJETS</a>
-                <a href="#skills">COMPETENCES</a>
-                <a href="#education">FORMATION</a>
-                <a href="#about">FAQ</a>
+                <a id="anchor-1" href="#projects">PROJETS</a>
+                <a id="anchor-2" href="#skills">COMPETENCES</a>
+                <a id="anchor-3" href="#education">FORMATION</a>
+                <a id="anchor-4" href="#about">FAQ</a>
             </ul>
         </div>
     </section>
     <section class="projects-container" id="projects">
-        <h2>Projets & réalisations</h2>
+        <h2 id="subtitle">Projets & réalisations</h2>
         <div>
             <div class="project">
                 <img src="img\icons\logo-cristalens.webp" alt>
                 <p>Cette entreprise française m'a confié une mission lors d'un stage de 10 semaines : automatiser le traitement de données cliniques issues de leur base de données afin de pouvoir produire un dashboard. L'extraction de ces chiffres et leur interprétation statistique étaient auparavant réalisées manuellement. Permettre un processus plus rapide a permis à Cristalens d'accéder plus rapidement à leurs données et in fine aux tendances statistiques afin d'améliorer leur réactivité.</p>
             </div>
             <div class="project project-middle">
-                <img src="img\photos\hotel-photo.jpg" alt>
+                <img src="" alt ="Bon Appétit">
                 <p> Projet 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus fuga nulla inventore repellat amet accusantium debitis velit. Ab sint obcaecati cupiditate voluptas quisquam libero qui sunt eaque veniam maxime.</p>
             </div>
             <div class="project">
@@ -62,86 +62,84 @@
     </section>
     <section class="soft-skills-container" id="skills">
         <div class="soft-skills-head">
-            <h2>Soft skills</h2>
+            <h2 id="subtitle">Soft skills</h2>
         </div>
         <ul class="soft-skills-content">
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-1" class="soft-skills-container-box">
                 <img src="img\icons\perroquet-icon.png">
                 <h3>Communicant</h3>
                 <p>J'écoute, je comprends, je réponds</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-2" class="soft-skills-container-box">
                 <img src="img\icons\cameleon-icon.png">
                 <h3>Adaptable</h3>
                 <p>Riche expérience professionnelle</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-3" class="soft-skills-container-box">
                 <img src="img\icons\tortue-icon.png">
                 <h3>Patient</h3>
                 <p>Indispendable allié</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-1" class="soft-skills-container-box">
                 <img src="img\icons\sherlock-holmes-icon.png">
                 <h3>Analytique</h3>
                 <p>Analyser avec précision, agir avec rigueur</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-2" class="soft-skills-container-box">
                 <img src="img\icons\open-icon.png">
                 <h3>Ouvert</h3>
                 <p>Aux idées et aux perspectives différentes</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-3" class="soft-skills-container-box">
                 <img src="img\icons\teamwork-icon.png">
                 <h3>Esprit d'équipe</h3>
                 <p>Ensemble on va plus loin</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-1" class="soft-skills-container-box">
                 <img src="img\icons\help-icon.png">
                 <h3>Encadrant</h3>
                 <p>Experience en onboarding</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-2" class="soft-skills-container-box">
                 <img src="img\icons\ressort-icon.png">
                 <h3>Résilient</h3>
                 <p>Je persévère jusqu'à atteindre mon but</p>
             </div>
-            <div class="soft-skills-container-box">
+            <div id="soft-skill-icon-3" class="soft-skills-container-box">
                 <img src="img\icons\ethical-icon.png">
                 <h3>Ethique</h3>
                 <p>Appliqué tout au long de ma carrière</p>
             </div>
         </ul>
-    </section> 
-    <section class="hard-skills-container ">
+    </section>
+    <section class="hard-skills-container">
+        <div class="hard-skills-title">  
+            <h2 id="subtitle">Hard skills</h2>
+        </div>
         <div class="hard-skills-content">
-            <div class="hard-skills-box">
-                <div class="hard-skills-box-title">
-                    <h2>Hard skills</h2>
+            <div class="hard-skills-icon-content">
+                <div class="hard-skills-icon-subtitle">
+                    <h3>i</h3>
                 </div>
                 <div class="hard-skills-icons">
-                    <img class="icon" src="img/icons/techno/css3-logo.png">
-                    <img class="icon" src="img/icons/techno/symfony-logo.png">
                     <img class="icon" src="img/icons/techno/html5-logo.png">
-                </div>
-                <div class="hard-skills-icons">
+                    <img class="icon" src="img/icons/techno/css3-logo.png">
+                    <img class="icon" src="img/icons/techno/php-logo.png">
+                    <img class="icon" src="img/icons/techno/symfony-logo.png">
                     <img class="icon" src="img/icons/techno/python-logo.png">
                     <img class="icon" src="img/icons/techno/js-logo.png">
-                    <img class="icon" src="img/icons/techno/php-logo.png">
                     <img class="icon" src="img/icons/techno/sql-icon.png">
                 </div>
             </div>
-            <div class="hard-skills-box">
-                <div class="hard-skills-box-title">
-                    <h2>+=1</h2>
-                </div>
-                <div class="hard-skills-icons">
-                    <img class="icon" src="img/icons/techno/jupyter-logo-inversed colors.png">
-                    <img class="icon" src="img/icons/techno/NoSQL-inversed-colours.png">
+            <div class="hard-skills-icon-content">
+                <div class="hard-skills-icon-subtitle">
+                    <h3>i++</h3>
                 </div>
                 <div class="hard-skills-icons">
                     <img class="icon" src="img/icons/techno/R-icon.png">
+                    <img class="icon" src="img/icons/techno/jupyter-logo2.png">
+                    <img class="icon" src="img/icons/techno/icon-nosql.png">
                     <img class="icon" src="img/icons/techno/tableau_icon.png">
-                    <img class="icon" src="img/icons/techno/sql-icon.png">
                 </div>
             </div>
         </div>

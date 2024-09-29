@@ -2,6 +2,7 @@
     --black: #212121;
     --white: #ffffff;
     --green: #66CDAA;
+    --lightgrey: #e8e8e8;
 }
 
 body {
@@ -70,7 +71,7 @@ header ul {
 .links {
     display: flex;
     justify-content: space-around;
-    width:5rem;
+    width:fit-content;
     color :var(--black);
     background-color: var(--green);
     border: 1px solid;
@@ -88,11 +89,38 @@ header ul {
     }
 }
 
+.nav-links-box {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links-box a {
+    margin-inline: 1rem;
+}
+
+#nav-link-1 {
+    color: var(--green);
+    background-color: var(--black);
+    border-color: var(--green);
+    &:hover {
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
+
+
+
 .hero-container {
     display: flex;
     flex-direction: column;
     height: 50vh;
     padding: 2rem;
+}
+
+.hero-container span {
+    color: var(--green);
 }
 
 .hero-box {
@@ -147,6 +175,9 @@ header ul {
 }
 
 .project img {
+    display: flex;
+    margin-inline: auto;
+    margin-block: auto;
     width:30%;
     height: 70%;
 }
@@ -156,7 +187,9 @@ header ul {
     align-items: center;
     text-align: left;
     text-wrap: balance;
-    width: 60%;
+    padding: 1.5rem;
+    line-height: 1.3rem;
+    width: 70%;
 }
 
 .project-middle {
@@ -173,6 +206,10 @@ header ul {
 .soft-skills-head {
     display: flex;
     justify-content: space-around;
+}
+
+.soft-skills-head h2 {
+    padding: 1.5rem;
 }
 
 .soft-skills-container-box {
@@ -203,18 +240,19 @@ header ul {
 }
 
 .hard-skills-container {
-    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
     background-color: var(--black);
 }
 
-.hard-skills-container img {
-    width: 50px;
-    height: 50px;
+.hard-skills-title {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    color: var(--white);
 }
 
-.hard-skills-container p {
-    font-size: 2rem;
-}
 
 .hard-skills-content {
     display: flex;
@@ -222,13 +260,15 @@ header ul {
     width: 80%;
     margin-inline: auto;
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
 .hard-skills-box {
-    width: 20rem;
-    height: fit-content;
+    width: 18rem;
+    height: 17rem;
     border-radius: 10px;
+    border: 8px solid;
+    border-color: var(--green);
     background-color: var(--white);
 }
 
@@ -238,14 +278,41 @@ header ul {
     align-items: center;
     padding: 1rem;
     color: var(--black);
+    border-bottom: 8px solid;
+    border-color: var(--green);
+}
+
+.hard-skills-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.hard-skills-icon-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hard-skills-icon-subtitle {
+    padding: 2rem;
+    width: 4rem;
+    color: var(--white);
 }
 
 .hard-skills-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     width: 100%;
-    margin-inline: auto;
-    padding-block: 1rem;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
 }
 
 .education-container {
@@ -255,7 +322,7 @@ header ul {
 
 .education-container h2 {
     text-align : center;
-    padding-block: 2rem;
+    padding: 1.5rem;
 }
 
 .education-container ul {
@@ -278,7 +345,7 @@ header ul {
 
 .about-container h2 {
     text-align : center;
-    padding-block: 2rem;
+    padding: 1.5rem;
 }
 
 .about-content {
@@ -337,7 +404,7 @@ details summary {
 
 details[open] {
     max-height: 500px;
-    background-color: #e8e8e8;
+    background-color: var(--lightgrey);
 }
 
 details[open] summary {
@@ -381,20 +448,133 @@ details a:hover {
 
 
 
-/* ANIMATIONS */
+/* =====ANIMATIONS===== */
 
-.checkbox {
-    display: none;
+/* nav-bar */
+
+#nav-photo {
+    animation: fadeIn 0.01s linear 1.8s 1 forwards;
+    opacity: 0;
 }
 
-.label-container {
-    width: 100%;
-    background-color: var(--black);
+#nav-link-1 {
+    animation: fadeIn 0.01s linear 2.2s 1 forwards;
+    opacity: 0;
 }
 
-.label-container label {
-    margin-inline: auto;
+#nav-link-2 {
+    animation: fadeIn 0.01s linear 2.6s 1 forwards;
+    opacity: 0;
 }
+
+#anchor-1 {
+    animation: fadeIn 0.01s linear 3s 1 forwards;
+    opacity: 0;
+}
+
+#anchor-2 {
+    animation: fadeIn 0.01s linear 3.2s 1 forwards;
+    opacity: 0;
+}
+
+#anchor-3 {
+    animation: fadeIn 0.01s linear 3.4s 1 forwards;
+    opacity: 0;
+}
+
+#anchor-4 {
+    animation: fadeIn 0.01s linear 3.6s 1 forwards;
+    opacity: 0;
+}
+
+/* header */
+
+.hero-container h1 {
+    animation: moveUp 3s, fadeIn 3s ease-in forwards;
+}
+
+.hero-box p {
+    animation: moveUp 3s, fadeIn 3s ease-in forwards;
+}
+
+/* subtitles */
+
+#subtitle {
+    opacity: 0;
+}
+
+#subtitle.visible {
+    animation: fadeIn 0.5s 1 linear forwards, scale 0.5s 1 linear forwards;
+}
+
+/* projects */
+
+.project {
+    opacity: 0;
+}
+
+.project.visible {
+
+    animation: fadeIn 1s 1 linear forwards, moveUp 1s ease-out forwards;
+}
+
+/* hard skills */
+
+#soft-skill-icon-1 {
+    opacity: 0;
+}
+
+#soft-skill-icon-1.visible {
+    animation: fadeIn 0.5s 1 linear 0.5s forwards, scale 0.5s 1 linear 0.5s forwards;
+}
+
+#soft-skill-icon-2 {
+    opacity: 0;
+}
+
+#soft-skill-icon-2.visible {
+    animation: fadeIn 0.5s 1 linear 1s forwards, scale 0.5s 1 linear 1s forwards;
+}
+
+#soft-skill-icon-3 {
+    opacity: 0;
+}
+
+#soft-skill-icon-3.visible {
+    animation: fadeIn 0.5s 1 linear 1.5s forwards, scale 0.5s 1 linear 1.5s forwards;
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0
+    }
+    100% { 
+        opacity:1
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(8rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+
+/* =====FIN ANIMATIONS===== */
+
 
 
 
@@ -440,7 +620,7 @@ details a:hover {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     body {
         margin-block: 0;
@@ -478,6 +658,9 @@ details a:hover {
         width: auto;
         height: 35vh;
         border-radius: 50px;
+        &:hover {
+            transform: none;
+        }
     }
 
     .contact-container {
@@ -674,7 +857,7 @@ details a:hover {
         display : none;
     }
 
-    .hard-skills-container {
+    /* .hard-skills-container {
         display: none;
-    }
+    } */
 }
