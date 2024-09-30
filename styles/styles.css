@@ -71,11 +71,11 @@ header ul {
 .links {
     display: flex;
     justify-content: space-around;
-    width:fit-content;
-    color :var(--black);
-    background-color: var(--green);
+    width: fit-content;
+    color :var(--green);
+    background-color: var(--black);
     border: 1px solid;
-    border-color: var(--black);
+    border-color: var(--green);
     border-radius: 25px;
     text-decoration: none;
     padding: 0.6rem;
@@ -100,9 +100,9 @@ header ul {
     margin-inline: 1rem;
 }
 
-#nav-link-1 {
-    color: var(--green);
-    background-color: var(--black);
+#nav-link-2 {
+    color: var(--black);
+    background-color: var(--green);
     border-color: var(--green);
     &:hover {
         color: var(--white);
@@ -203,12 +203,12 @@ header ul {
     background-color: var(--black);
 }
 
-.soft-skills-head {
+.soft-skills-title {
     display: flex;
     justify-content: space-around;
 }
 
-.soft-skills-head h2 {
+.soft-skills-title h2 {
     padding: 1.5rem;
 }
 
@@ -249,8 +249,11 @@ header ul {
 .hard-skills-title {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
     color: var(--white);
+}
+
+.hard-skills-title h2 {
+    padding: 1.5rem;
 }
 
 
@@ -357,7 +360,7 @@ header ul {
 
 .contact-container {
     padding-block: 2rem;
-    padding-inline: 6rem;
+    padding-inline: 2rem;
     color: var(--white);
     background-color: var(--black);
 }
@@ -369,16 +372,14 @@ header ul {
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
     color :var(--white);
     background-color: var(--black);
     border-radius: 0 0 20px 20px;
+    padding-inline: 2rem;
 }
 
 .signature {
-    display: flex;
-    align-items: center;
+    padding-block: 1rem;
 }
 
 .phone-box {
@@ -541,8 +542,65 @@ details a:hover {
 }
 
 #soft-skill-icon-3.visible {
-    animation: fadeIn 0.5s 1 linear 1.5s forwards, scale 0.5s 1 linear 1.5s forwards;
+    animation: fadeIn 0.5s 1 ease 1.5s forwards, scale 0.5s 1 linear 1.5s forwards;
 }
+
+#icon-1.visible {
+    opacity:0;
+}
+
+#icon-1.visible {
+    animation: fadeIn 2s 1 ease forwards, slideLeft 2s 1 ease forwards;
+}
+
+#icon-2.visible {
+    opacity:0;
+}
+
+#icon-2.visible {
+    animation: fadeIn 2s 1 ease 0.3s forwards, slideLeft 2s 1 ease 0.3s forwards;
+}
+
+#icon-3.visible {
+    opacity:0;
+}
+
+#icon-3.visible {
+    animation: fadeIn 2s 1 ease 0.6s forwards, slideLeft 2s 1 ease 0.6s forwards;
+}
+
+#icon-4.visible {
+    opacity:0;
+}
+
+#icon-4.visible {
+    animation: fadeIn 2s 1 ease 0.9s forwards, slideLeft 2s 1 ease 0.9s forwards;
+}
+
+#icon-5.visible {
+    opacity:0;
+}
+
+#icon-5.visible {
+    animation: fadeIn 2s 1 ease 1.2s forwards, slideLeft 2s 1 ease 1.2s forwards;
+}
+
+#icon-6.visible {
+    opacity:0;
+}
+
+#icon-6.visible {
+    animation: fadeIn 2s 1 ease 1.5s forwards, slideLeft 2s 1 ease 1.5s forwards;
+}
+
+#icon-7.visible {
+    opacity:0;
+}
+
+#icon-7.visible {
+    animation: fadeIn 2s 1 ease 1.8s forwards, slideLeft 2s 1 ease 1.8s forwards;
+}
+
 
 
 @keyframes scale {
@@ -569,6 +627,15 @@ details a:hover {
     }
     100% {
         transform: translateY(0rem);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(25rem);
+    }
+    100% {
+        transform: translateX(0rem);
     }
 }
 
@@ -601,8 +668,12 @@ details a:hover {
         font-size: 1.4rem;
     }
 
+    .soft-skills-content {
+        padding-block: 1rem;
+    }
+
     .soft-skills-content p {
-    padding: 0;;
+        padding: 0;
     }
 
     .about-content {
@@ -686,7 +757,6 @@ details a:hover {
 
     .hero-box {
         text-align: left;
-        align-items: end;
     }
 
     .hero-box p {
@@ -734,15 +804,13 @@ details a:hover {
         padding: 0;
     }
     
-    .soft-skills-head {
-        width: 100%;
-        padding-block: 1rem;
+    .soft-skills-title {
         margin-inline: 0;
         color: var(--black);
         background-color: var(--green);
     }
 
-    .soft-skills-head h2 {
+    .soft-skills-title h2 {
         text-align: center;
     }
 
@@ -757,6 +825,36 @@ details a:hover {
 
     .soft-skills-container-box h3 {
         font-size: 1.2rem;
+    }
+
+    .hard-skills-title {
+        margin-inline: 0;
+        color: var(--black);
+        background-color: var(--green);
+    }
+
+    .hard-skills-content {
+        width: 100%;
+        margin-inline: 0;
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-block: 1rem;
+    }
+
+    .hard-skills-icon-content {
+        padding:0;
+    }
+
+    .hard-skills-icon-subtitle {
+        padding: 0rem;
+        padding-left: 1rem;
+
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
     }
 
     .education-container {
@@ -857,7 +955,9 @@ details a:hover {
         display : none;
     }
 
-    /* .hard-skills-container {
-        display: none;
-    } */
+    .signature {
+        display: flex;
+        justify-content: center;
+    }
+    
 }

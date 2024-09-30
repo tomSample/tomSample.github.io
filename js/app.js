@@ -23,4 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     observeElements('#soft-skill-icon-1', 0.2);
     observeElements('#soft-skill-icon-2', 0.2);
     observeElements('#soft-skill-icon-3', 0.2);
+    observeElements('#icon-1', 0.2);
+    observeElements('#icon-2', 0.2);
+    observeElements('#icon-3', 0.2);
+    observeElements('#icon-4', 0.2);
+    observeElements('#icon-5', 0.2);
+    observeElements('#icon-6', 0.2);
+    observeElements('#icon-7', 0.2);
 });
