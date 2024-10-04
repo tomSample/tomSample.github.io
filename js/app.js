@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {                       // a
         elements.forEach(element => observer.observe(element));                      // observer chaque élément sélectionné
     };
 
-    observeElements('.project', 0.8);                       //selecteurs cibles
+    observeElements('.project', 0.3);
+    observeElements('#project-4-logo', 0.3);                        //selecteurs cibles
     observeElements('.soft-skill-icon', 0.5);
     observeElements('#subtitle', 0.5);
     observeElements('#soft-skill-icon-1', 0.8);
@@ -30,4 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {                       // a
     observeElements('#icon-6', 0.8);
     observeElements('#icon-7', 0.8);
 
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const image = document.getElementById("project-4-logo");
+
+    image.addEventListener("mouseover", () => {
+        image.classList.add("hovered");
+    });
+
+    image.addEventListener("mouseout", () => {
+        image.classList.remove("hovered");
+    });
 });

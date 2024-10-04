@@ -185,18 +185,21 @@ header ul {
 }
 
 .project p {
-    display: flex;
-    align-items: center;
     text-align: left;
     text-wrap: balance;
+    margin: auto;
     padding: 1.5rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     width: 70%;
 }
 
-.project-middle {
+.project-right {
     flex-direction: row-reverse;
     border-block: 1px solid var(--black);
+}
+
+#project-last {
+    border-bottom:none;
 }
 
 .soft-skills-container {
@@ -263,12 +266,11 @@ header ul {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     margin-inline: auto;
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
-
 
 
 .hard-skills-box {
@@ -326,24 +328,25 @@ header ul {
 }
 
 .education-container h3 {
-    text-align : center;
+    padding: 1rem;
 }
 
 .education-container ul {
     display: flex;
     flex-direction: column;
     margin-inline: auto;
+    padding-block: 1rem;
     max-width: 70%;
     list-style: inside;
 }
 
 .education-container li {
-    padding-block: 1.2rem;
+    padding-block: 1rem;
     line-height: 1.3rem;
 }
 
 .about-container {
-    padding: 2rem;
+
     padding-bottom: 4rem;
     background-color: var(--white);
 }
@@ -375,14 +378,12 @@ header ul {
 }
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
     color :var(--white);
     background-color: var(--black);
     border-radius: 0 0 20px 20px;
-    padding-inline: 2rem;
-}
-
-.signature {
-    text-align: center;
+    padding-inline: 3rem;
     padding-block: 1rem;
 }
 
@@ -509,7 +510,7 @@ details a:hover {
 }
 
 #subtitle.visible {
-    animation: fadeIn 0.4s 1 linear 0.5s forwards, scale 0.4s 1 linear 0.5s forwards;
+    animation: fadeIn 0.4s 1 linear 0.3s forwards, scale 0.4s 1 linear 0.3s forwards;
 }
 
 /* projects */
@@ -519,8 +520,28 @@ details a:hover {
 }
 
 .project.visible {
-
     animation: fadeIn 1s 1 linear forwards, moveUp 1s ease-out forwards;
+}
+
+#project-right-logo {
+    height: 280px !important;
+    width : auto !important;
+    border-radius: 200px ;
+}
+
+#project-right-logo:hover {
+    background-color: var(--green);
+}
+
+#project-4-logo {
+    height: 280px !important;
+    width : auto !important;
+    padding: 2rem;
+    border-radius: 60px !important;
+}
+
+#project-4-logo.hovered {
+    animation: rotate 0.8s ease-in-out 1 alternate;
 }
 
 /* hard skills */
@@ -640,6 +661,15 @@ details a:hover {
     }
     100% {
         transform: translateX(0rem);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
@@ -805,6 +835,22 @@ details a:hover {
         padding: 0;
     }
 
+    #project-right-logo {
+        height: 150px !important;
+        width : auto !important;
+    }
+
+    #project-3-logo {
+        height: 190px !important;
+        width : auto !important;
+    }
+
+    #project-4-logo {
+        height: 220px !important;
+        width : auto !important;
+        border-radius: 60px !important;
+    }
+
     .soft-skills-container {
         padding: 0;
     }
@@ -864,6 +910,10 @@ details a:hover {
 
     .education-container {
         padding: 1rem;
+    }
+
+    .education-container h3 {
+        text-align: center;
     }
 
     .education-container ul {
@@ -963,6 +1013,13 @@ details a:hover {
     .signature {
         display: flex;
         justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 0.8rem;
+        text-wrap: balance;
     }
     
 }
