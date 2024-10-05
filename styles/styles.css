@@ -184,6 +184,24 @@ header ul {
     height: 70%;
 }
 
+.project-logo-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+}
+
+#project-1-logo {
+    width:100%;
+    height: auto;
+}
+
+#project-3-logo {
+    width: 100%;
+    height: auto;
+}
+
+
 .project p {
     text-align: left;
     text-wrap: balance;
@@ -523,13 +541,13 @@ details a:hover {
     animation: fadeIn 1s 1 linear forwards, moveUp 1s ease-out forwards;
 }
 
-#project-right-logo {
-    height: 280px !important;
-    width : auto !important;
+.project-right-logo {
+    height: 150px !important;
+    width : 150px !important;
     border-radius: 200px ;
 }
 
-#project-right-logo:hover {
+.project-right-logo:hover {
     background-color: var(--green);
 }
 
@@ -541,7 +559,7 @@ details a:hover {
 }
 
 #project-4-logo.hovered {
-    animation: rotate 0.8s ease-in-out 1 alternate;
+    animation: rotate 0.8s linear 1 alternate;
 }
 
 /* hard skills */
@@ -822,6 +840,10 @@ details a:hover {
     .project {
         display: block;
         padding-block: 2rem;
+    }
+
+    .project-logo-box {
+        width: 100%;
     }
 
     .project img {
