@@ -340,6 +340,15 @@ header ul {
     background-color: var(--white);
 }
 
+.education-container a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.education-container a:hover {
+    text-decoration: underline;
+}
+
 .education-container h2 {
     text-align : center;
     padding: 1.5rem;
