@@ -567,10 +567,6 @@ details a:hover {
     border-radius: 60px !important;
 }
 
-#project-4-logo.hovered {
-    animation: rotate 0.8s linear 1 alternate;
-}
-
 /* hard skills */
 
 #soft-skill-icon-1 {
@@ -690,16 +686,6 @@ details a:hover {
         transform: translateX(0rem);
     }
 }
-
-@keyframes rotate {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
 
 /* =====FIN ANIMATIONS===== */
 
