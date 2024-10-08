@@ -32,16 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {                       // a
     observeElements('#icon-7', 0.8);
 
 });
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const image = document.getElementById("project-4-logo");
-
-    image.addEventListener("mouseover", () => {
-        image.classList.add("hovered");
-    });
-
-    image.addEventListener("mouseout", () => {
-        image.classList.remove("hovered");
-    });
-});
