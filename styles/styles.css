@@ -738,7 +738,7 @@ details a:hover {
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
 
     body {
         margin-block: 0;
@@ -850,6 +850,10 @@ details a:hover {
     .project p {
         width: 100%;
         padding: 0;
+    }
+
+    #project-1-logo {
+        width : 50%
     }
 
     #project-right-logo {
