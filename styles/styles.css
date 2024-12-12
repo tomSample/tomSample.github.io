@@ -372,8 +372,30 @@ header ul {
     line-height: 1.3rem;
 }
 
-.about-container {
+.synthesis-container {
+    padding-bottom: 4rem;
+    background-color: var(--white);
+}
 
+.synthesis-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.synthesis-table h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.synthesis-table img {
+    width : 800px;
+    height: auto;
+    margin-inline: auto;
+}
+
+.about-container {
     padding-bottom: 4rem;
     background-color: var(--white);
 }
@@ -1041,6 +1063,10 @@ details a:hover {
         text-align: center;
         font-size: 0.8rem;
         text-wrap: balance;
+    }
+
+    .synthesis-container {
+        display: none;
     }
     
 }
